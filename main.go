@@ -8,7 +8,8 @@ import (
 func main() {
 	graph, ants, err := utils.Parser()
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
+		return
 	}
 
 	fmt.Printf("Parsed Graph: %+v\n", graph)
