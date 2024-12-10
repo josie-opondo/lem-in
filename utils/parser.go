@@ -126,6 +126,8 @@ func Parser() (*structure.Graph, int, error) {
 				}
 			}
 			graph.Links = append(graph.Links, structure.Link{Room1: room1, Room2: room2})
+		} else if strings.Contains(input, "#") && (input != "##start" || input != "##end") {
+			continue
 		}
 	}
 
