@@ -5,7 +5,7 @@ type Room struct {
 	X, Y     int
 	IsStart  bool
 	IsEnd    bool
-	Occupied bool
+	Occupied int
 }
 
 type Graph struct {
