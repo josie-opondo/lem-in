@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	graph, ants, err := utils.Parser()
+	graph, ants, err := utils.ParseFile("file.txt")
 	if err != nil {
 		fmt.Println(err)
 		return
